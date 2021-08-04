@@ -1,0 +1,27 @@
+{{- if .Values.ingress.enabled -}}
+{{- $fullName := include "footballcrimestatistics.fullname" . -}}
+{{- $svcPort := .Values.service.port -}}
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: {{ $fullName }}-https
+  labels:
+    {{- include "footballcrimestatistics.labels" . | nindent 4 }}
+  {{- with .Values.ingress.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  entryPoints:
+    - websecure
+  routes:
+  {{- range .Values.ingress.hosts }}
+  - match: Host(`{{ .host }}`)
+    kind: Rule
+    services:
+    - name: {{ $fullName }}
+      port: {{ $svcPort }}
+  {{- end }}
+  tls:
+    certResolver: cloudflare
+{{- end }}

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballCrimeStatistics.Uni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballCrimeStatistics.Logic", "FootballCrimeStatistics.Logic\FootballCrimeStatistics.Logic.csproj", "{20B8ABB6-F762-49A0-8416-9951F2F5DA6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballCrimeStatistics.Models", "FootballCrimeStatistics.Models\FootballCrimeStatistics.Models.csproj", "{D184634F-13F8-466C-8C24-8FABA983D995}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{20B8ABB6-F762-49A0-8416-9951F2F5DA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B8ABB6-F762-49A0-8416-9951F2F5DA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B8ABB6-F762-49A0-8416-9951F2F5DA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D184634F-13F8-466C-8C24-8FABA983D995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D184634F-13F8-466C-8C24-8FABA983D995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D184634F-13F8-466C-8C24-8FABA983D995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D184634F-13F8-466C-8C24-8FABA983D995}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
